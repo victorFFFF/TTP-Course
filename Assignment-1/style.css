@@ -1,0 +1,32 @@
+
+body{
+    background-image: url("pictures/gif2.gif");
+}
+
+.center{
+    text-align: center;
+}
+.background1{
+    background-color: white;
+    margin:10%;
+    padding: 1%;    
+}
+
+.line{
+    line-height: 2;
+}
+.intro{
+    margin: auto;
+    width: 50%;
+    border: 10px solid black;
+    padding: 2%;
+}
+
+.theButton{
+    background-color: white;
+    padding: 3%;
+    margin-left: 45%;
+    margin-right: 45%;
+    border: 10px solid black;
+}
+

@@ -1,0 +1,43 @@
+<!-- Question 4.1 & 4.2 FINISHED -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="style.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+
+  <H1  onMouseOver="alert('Hey, I told you not to hover over me');return true;">DONT HOVER OVER ME</H1>  
+
+
+    <div class ="background2">
+        <p>Click the button to argue</p>
+
+        <p><button onclick="myFunction()">Click Me</button></p>
+
+
+        <p><button onclick="myFunction2()">No,Click Me</button></p>
+    </div>
+
+<div id="myDIV"></div>
+
+
+<script>
+
+function myFunction() {
+  var x = document.getElementById("myDIV");
+    x.innerHTML = "Im right!";
+}
+function myFunction2() {
+  var x = document.getElementById("myDIV");
+    x.innerHTML = "No, im right!";
+}
+
+</script>
+
+</body>
+</html>
+

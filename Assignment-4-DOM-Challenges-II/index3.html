@@ -1,0 +1,46 @@
+<!-- Question 4.4 -->
+
+
+<!DOCTYPE html> 
+<html> 
+
+	<head> 
+        <link href="style.css" rel="stylesheet" type="text/css">
+    </head> 
+    
+	<body> 
+            <div class="background2">
+                    <form onSubmit = "return checkPassword(this)"> 
+                        <tr> 
+                            <!-- Enter Password. -->
+                            <td>Password:</td> 
+                            <td><input type = password name = password1 size = 25> </td> 
+                        </tr> 
+                    
+                        <tr> 
+                            <input type = submit value = "Submit"></td> 
+                        </tr> 
+                        <h1 id = "theResult"></h1> 
+                
+                        </form>
+                    </div>
+                        
+                    <script> 
+                        function checkPassword(form) { 
+                            password1 = form.password1.value; 
+                                
+                            // If Not same return False.	 
+                            if (password1 != '12345678') { 
+                                alert ("\nPassword did not match: Please try again...") 
+                                return false; 
+                            } 
+                            else{
+                                let x = document.getElementById("theResult");
+                                x.innerHTML = "You are Correct!";
+                            }
+                        } 
+                    </script> 
+                    
+
+	</body> 
+</html>					 

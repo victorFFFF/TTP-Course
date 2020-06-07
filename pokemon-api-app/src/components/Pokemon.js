@@ -5,7 +5,7 @@ import axios from "axios";
 class Pokemon extends Component {
   constructor(props) {
     super(props);
-    this.state = { pokemon: null, searchInput: "" };
+    this.state = { pokemon: null, searchInput: "", show: false };
   }
 
   handleInput = (e) => {
@@ -23,26 +23,24 @@ class Pokemon extends Component {
           imageUrl: data.sprites.front_default,
         };
 
-        this.setState({ pokemon: newPokemonObj });
+        this.setState({ pokemon: newPokemonObj, show:true });
       })
       .catch((err) => console.log(err));
   };
 
   render() {
     let display;
-    if (!this.state.pokemon) {
+    if (!this.state.show) {
       display = <p>Loading...</p>;
     } else {
       display = (
-        <>
+
+        <div>
           <img
             src={this.state.pokemon.imageUrl}
-            alt={this.state.pokemon.name}
-          />
-          <ul>
-            <li>{this.state.pokemon.name} </li>
-          </ul>
-        </>
+            alt={this.state.pokemon.name} />
+            
+          </div>
       );
     }
 
